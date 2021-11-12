@@ -33,7 +33,7 @@ Nmap done: 1 IP address (1 host up) scanned in 21.51 seconds
 
 
 ## web page
-![screen](Pasted image 20210715105154.png)
+![screen]("Pasted image 20210715105154.png")
 ![screen](Pasted image 20210715105217.png)
 
 ## directory enumeration
